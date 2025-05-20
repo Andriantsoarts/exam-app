@@ -97,7 +97,10 @@ export default function Index() {
 							fontSize: 18,
 						}}
 					>
-						<Picker.Item label="Select a breed..." value="" />
+						<Picker.Item
+							label="Sélectionner une race..."
+							value=""
+						/>
 						{breeds.map((breed) => (
 							<Picker.Item
 								key={breed.id}
@@ -135,6 +138,11 @@ export default function Index() {
 						Suivant
 					</Text>
 				</TouchableOpacity>
+			</View>
+			<View className="bg-green-400 p-4">
+				<Text className="text-center text-white">
+					© by Andriantsoa 2025
+				</Text>
 			</View>
 		</SafeAreaView>
 	);
